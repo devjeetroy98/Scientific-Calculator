@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet"  type="text/css" href="calculator.css">
+    <title>Scientific Calculator</title>
+</head>
+<body>
+    <center>
+        <form action="" name="calcform">
+    <div>
+        <input type="text" class="viewbar" id="viewbar1" name=txt1 style="font-size: 50px" readonly autofocus>
+    </div><br>
+    <div class="button-panel">
+        <div class="scieval">
+            <input type="button" onclick="sqrt()" id="myBtn1" value="sqrt" >
+            <input type="button" onclick="cube()" id="myBtn1" value="x^3" >
+            <input type="button" onclick="square()" id="myBtn1" value="x^2">
+            <input type="button" onclick="pow()" id="myBtn1" value="^">
+            <input type="button" onclick="mylog()" id="myBtn1" value="log" > <br>
+            <input type="button" onclick="myln()" id="myBtn1" value="ln" >
+            <input type="button" onclick="mysin()" id="myBtn1" value="sin" >
+            <input type="button" onclick="mycos()" id="myBtn1" value="cos" >
+            <input type="button" onclick="mytan()" id="myBtn1" value="tan" >
+            <input type="button" onclick="sini()" id="myBtn1" value="asin" > <br>
+            <input type="button" onclick="cosi()" id="myBtn1" value="acos" >
+            <input type="button" onclick="tani()" id="myBtn1" value="atan" >
+            <input type="button" onclick="fbo()" id="myBtn1" value="(" >
+            <input type="button" onclick="fbc()" id="myBtn1" value=")" >
+            <input type="button" onclick="fact1()" id="myBtn1" value="x!">
+        </div>
+        <div class="count">
+            <input type="button" onclick="show(7)" id="myBtnc" value='7' name=btn7 >
+            <input type="button" onclick="show(8)" id="myBtnc" value='8' name=btn8>
+            <input type="button" onclick="show(9)" id="myBtnc" value='9' name=btn9>
+            <input type="button" onclick="del()" id="myBtns" value="DEL">
+            <input type="button" onclick="reload()" id="myBtns" value="AC"> <br>
+            <input type="button" onclick="show(4)" id="myBtnc" value='4' name=btn4>
+            <input type="button" onclick="show(5)" id="myBtnc" value='5' name=btn5>
+            <input type="button" onclick="show(6)" id="myBtnc" value='6' name=btn6>
+            <input type="button" onclick="show('*')" id="myBtn1" value='*' name=mulbtn>
+            <input type="button" onclick="show('/')" id="myBtn1" value='/' name=divbtn> <br>
+            <input type="button" onclick="show(1)" id="myBtnc" value='1' name=btn1>
+            <input type="button" onclick="show(2)" id="myBtnc" value='2' name=btn2>
+            <input type="button" onclick="show(3)" id="myBtnc" value='3' name=btn3>
+            <input type="button" onclick="show('+')" id="myBtn1" value='+' name=addbtn>
+            <input type="button" onclick="show('-')" id="myBtn1" value='-' name=subbtn> <br>
+            <input type="button" onclick="show(0)" id="myBtnc" value='0' name=btn0>
+            <input type="button" onclick="show('.')" id="myBtnc" value='.' name=decbtn>
+            <input type="button" onclick="exp1()" id="myBtnc" value="EXP">
+            <input type="button" onclick="ans1()" id="myBtnc" value="Ans">
+            <input type="button" onclick="operate()" id="myBtncal" value='=' name="equals">
+        </div>
+
+    </div>
+    </form>
+    </center>
+    <script src="calculator.js"></script>
+</body>
+</html>
